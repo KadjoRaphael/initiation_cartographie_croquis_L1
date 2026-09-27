@@ -1,5 +1,6 @@
 ---
 title: Séance 2 - Échelle, projection et fond de carte
+nav_order: 3
 ---
 
 # Séance 2 - Les éléments fondamentaux d'une carte : échelle, projection et fond de carte
