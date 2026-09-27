@@ -613,7 +613,7 @@ et simplifier la réalité géographique**.
 
 Le support de la séance est disponible au format PDF :
 
-👉 [**Télécharger le support de la séance 2 (PDF)**](documents/Seance2_Les_elements_fondamentaux_d_une_carte.pdf)
+👉 [**Télécharger le support de la séance 2 (PDF)**](documents/XSeance2_Les_elements_fondamentaux_d_une_carte.pdf)
 
 Ce document correspond à la partie **« Séance 2 - Les éléments fondamentaux
 d'une carte : échelle, projection et fond de carte »**.
@@ -630,7 +630,7 @@ Le TD comprend trois exercices :
 - comparer un même territoire à plusieurs échelles ;
 - comparer plusieurs représentations du monde.
 
-👉 [**Télécharger l'énoncé du TD2 (PDF)**](documents/Exercice_seance_2.pdf)
+👉 [**Télécharger l'énoncé du TD2 (PDF)**](documents/XExercice_seance_2.pdf)
 
 ---
 
@@ -638,7 +638,7 @@ Le TD comprend trois exercices :
 
 La correction est disponible au format PDF :
 
-👉 [**Télécharger la correction du TD2 (PDF)**](documents/Correction_exercice_seance_2.pdf)
+👉 [**Télécharger la correction du TD2 (PDF)**](documents/XCorrection_exercice_seance_2.pdf)
 
 ---
 
