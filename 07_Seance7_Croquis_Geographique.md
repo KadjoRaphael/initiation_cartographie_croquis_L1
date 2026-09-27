@@ -1,5 +1,6 @@
 ---
 title: Séance 7 - Du document au croquis géographique
+nav_order: 9
 ---
 
 # Séance 7 - Du document au croquis géographique
