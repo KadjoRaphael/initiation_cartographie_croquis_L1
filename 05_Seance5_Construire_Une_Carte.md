@@ -1,5 +1,6 @@
 ---
 title: Séance 5 - Construire une carte
+nav_order: 7
 ---
 
 # Séance 5 - Construire une carte : figurés, légende et habillage
