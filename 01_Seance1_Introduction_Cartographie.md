@@ -1,5 +1,6 @@
 ---
 title: Séance 1 - Qu'est-ce qu'une carte ?
+nav_order: 3
 ---
 
 # Séance 1 - Introduction à la cartographie : qu'est-ce qu'une carte ?
