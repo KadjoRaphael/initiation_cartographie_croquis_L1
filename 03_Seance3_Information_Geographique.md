@@ -1,5 +1,6 @@
 ---
 title: Séance 3 - L'information géographique
+nav_order: 5
 ---
 
 # Séance 3 - L'information géographique : QUOI ? OÙ ? COMMENT ?
