@@ -1,5 +1,6 @@
 ---
 title: Séance 9 - Atelier de synthèse
+nav_order: 11
 ---
 
 # Séance 9 - Atelier de synthèse : réaliser une production cartographique complète
