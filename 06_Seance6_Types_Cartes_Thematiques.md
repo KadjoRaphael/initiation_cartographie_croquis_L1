@@ -1,5 +1,6 @@
 ---
 title: Séance 6 - Types de cartes thématiques
+nav_order: 8
 ---
 
 # Séance 6 - Les principaux types de cartes thématiques
