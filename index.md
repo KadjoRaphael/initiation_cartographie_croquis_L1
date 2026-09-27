@@ -3,11 +3,6 @@ title: Accueil
 nav_order: 1
 ---
 
----
-title: Accueil
-nav_order: 1
----
-
 # Initiation à la cartographie et au croquis géographique
 
 **L1 Géographie et aménagement - Université Paris 8**
