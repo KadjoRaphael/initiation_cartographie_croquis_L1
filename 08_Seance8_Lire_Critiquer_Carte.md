@@ -1,5 +1,6 @@
 ---
 title: Séance 8 - Lire et critiquer une carte
+nav_order: 10
 ---
 
 # Séance 8 - Lire et critiquer une carte
