@@ -171,8 +171,8 @@ Par exemple :
 | Type de carte | Échelle | Espace représenté | Niveau de détail |
 | --- | --- | --- | --- |
 | Plan d'un quartier | Grande échelle | Petit | Très détaillé |
-| Carte d'une région | Échelle moyenne | Plus vaste | Détails intermédiaires |
-| Carte de France | Petite échelle | Vaste | Peu détaillé |
+| Carte d'une région | Échelle moyenne | vaste | Détails intermédiaires |
+| Carte de France | Petite échelle | Plus Vaste | Peu détaillé |
 | Planisphère | Très petite échelle | Monde entier | Très peu détaillé |
 
 Il faut donc retenir une relation essentielle :
