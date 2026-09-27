@@ -630,15 +630,15 @@ Le TD comprend trois exercices :
 - comparer un même territoire à plusieurs échelles ;
 - comparer plusieurs représentations du monde.
 
-👉 **Énoncé du TD2 : à venir**
+👉 [**Télécharger l'énoncé du TD2 (PDF)**](documents/Exercice_seance_2.pdf)
 
 ---
 
 # ✅ Correction du TD
 
-La correction sera disponible après la séance.
+La correction est disponible au format PDF :
 
-👉 **Correction du TD2 : à venir**
+👉 [**Télécharger la correction du TD2 (PDF)**](documents/Correction_exercice_seance_2.pdf)
 
 ---
 
