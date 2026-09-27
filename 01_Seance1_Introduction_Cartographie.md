@@ -26,7 +26,7 @@ l'espace géographique**.
 - comprendre que les signes utilisés sur une carte constituent un
   **langage cartographique** ;
 - comprendre qu'une carte permet de mettre en évidence l'organisation
-  spatiale d'un phénomène ;
+  spatiale d'un phénomène;
 - comprendre qu'une carte est une **représentation simplifiée et construite**
   de la réalité.
 
