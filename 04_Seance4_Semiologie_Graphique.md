@@ -1,5 +1,6 @@
 ---
 title: Séance 4 - Le langage cartographique
+nav_order: 6
 ---
 
 # Séance 4 - Le langage cartographique : la sémiologie graphique
