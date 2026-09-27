@@ -5,154 +5,662 @@ nav_order: 4
 
 # Séance 2 - Les éléments fondamentaux d'une carte : échelle, projection et fond de carte
 
-**Thème :** de l'espace réel à la carte — réduction, transformation et sélection de la réalité géographique
+Cette deuxième séance est consacrée aux principaux éléments qui permettent de
+passer de **l'espace réel à sa représentation sur une carte**.
 
-## Objectifs
+Nous étudierons trois notions fondamentales : **l'échelle**, la **projection
+cartographique** et le **fond de carte**.
 
-- Comprendre les principaux éléments qui permettent de construire une représentation cartographique de l'espace : **l'échelle, la projection et le fond de carte**
-- Comprendre qu'une carte implique nécessairement une **réduction**, une **transformation** et une **sélection** de la réalité
+L'objectif est également de comprendre qu'une carte implique nécessairement
+une **réduction**, une **transformation** et une **sélection** de la réalité
+géographique.
 
-## 2.1 De l'espace réel à la carte
+> **Fil conducteur de la séance :** comment passe-t-on de l'espace réel à sa
+> représentation sur une carte ?
 
-La Terre est immense et sa surface est courbe, alors qu'une carte est plane et de dimensions réduites. Trois questions se posent :
+---
 
-| Question | Notion |
-| -------- | ------ |
-| À quelle taille représenter le territoire ? | **L'échelle** |
-| Comment représenter la surface courbe de la Terre sur un plan ? | **La projection** |
-| Quels éléments du territoire conserver et représenter ? | **Le fond de carte et la généralisation** |
+## 🎯 Objectifs de la séance
 
-Ces choix dépendent de l'objectif de la carte : une carte de quartier, une carte de France et un planisphère ne montrent pas le même niveau de détail.
+À la fin de cette séance, vous devrez être capable de :
 
-## 2.2 L'échelle : réduire la réalité pour la représenter
+- comprendre ce qu'est l'**échelle** d'une carte ;
+- lire une échelle numérique et une échelle graphique ;
+- calculer une distance réelle à partir d'une distance mesurée sur une carte ;
+- distinguer **grande échelle** et **petite échelle** ;
+- comprendre la relation entre l'échelle et le niveau de détail ;
+- comprendre pourquoi une **projection cartographique** est nécessaire ;
+- comprendre que toute projection entraîne des **déformations** ;
+- comprendre que le centrage et l'orientation d'une carte sont des choix ;
+- comprendre le rôle du **fond de carte** ;
+- comprendre le principe de **généralisation cartographique**.
 
-L'**échelle** exprime le rapport entre une distance mesurée sur la carte et la distance correspondante dans la réalité. Elle indique combien de fois la réalité a été réduite.
+---
 
-**L'échelle numérique** s'écrit sous forme de rapport (`1 : 100 000` ou `1 / 100 000`) : distance sur la carte : distance réelle, **exprimées dans la même unité**.
+# 1. De l'espace réel à la carte
 
-- **1 : 100 000** → 1 cm sur la carte = 100 000 cm = 1 000 m = **1 km** sur le terrain.
-- **1 : 30 000 000** → 1 cm sur la carte = 30 000 000 cm = 300 000 m = **300 km** sur le terrain.
+Lorsqu'on réalise une carte, il est impossible de représenter un territoire
+exactement comme il existe dans la réalité.
 
-**L'échelle graphique** est une ligne graduée indiquant directement les distances réelles ; elle permet d'estimer rapidement la distance entre deux lieux.
+La Terre est immense et sa surface est **courbe**, alors qu'une carte est
+généralement représentée sur une surface **plane** et de dimensions réduites.
 
-## 2.3 Grande échelle et petite échelle
+Il faut donc effectuer plusieurs transformations pour passer du territoire
+réel à sa représentation cartographique.
 
-Une **grande échelle** représente un petit territoire avec beaucoup de détails ; une **petite échelle** représente un territoire plus vaste avec moins de détails.
+Trois questions sont particulièrement importantes :
 
-| Échelle | Exemple | Espace représenté | Niveau de détail |
-| ------- | ------- | ----------------- | ---------------- |
-| **Grande** (1 / 10 000) | Plan de quartier (Paris) | Petit | Rues, bâtiments, certains équipements |
-| **Moyenne** (1 / 1 000 000) | Carte d'une région (Île-de-France) | Plus vaste | Principales villes et axes de transport |
-| **Petite** (1 / 10 000 000) | Carte de France | Grand | Grandes limites et principales villes |
-| **Très petite** (1 / 100 000 000) | Planisphère | Très grand (monde) | Grands ensembles : continents, océans |
+1. **À quelle taille représenter le territoire ?**  
+   → C'est la question de l'**échelle**.
 
-> **Plus l'échelle est petite, plus l'espace représenté est grand.**
+2. **Comment représenter la surface courbe de la Terre sur un plan ?**  
+   → C'est la question de la **projection cartographique**.
 
-Sur un plan détaillé de Paris on représente rues et bâtiments ; sur une carte de France, il serait impossible et inutile de représenter toutes les rues de Paris : l'échelle influence directement **le niveau de détail** de la carte.
+3. **Quels éléments du territoire conserver et représenter ?**  
+   → C'est la question du **fond de carte** et de la **généralisation**.
 
-## 2.4 La projection : passer de la Terre au plan
+Ces choix dépendent de l'objectif de la carte.
 
-La **géodésie** définit la forme de la Terre et permet de localiser précisément chaque point (latitude, longitude, altitude) dans un système de référence. Il reste ensuite à représenter ces positions sur une surface plane : c'est la **projection cartographique**.
+Une carte de quartier, une carte de France et un planisphère ne peuvent pas
+représenter le même niveau de détail.
 
-Comme la peau d'une orange que l'on essaie d'aplatir sur une table, la surface de la Terre ne peut pas être mise à plat sans être découpée, étirée ou déformée : **toute projection provoque des déformations**, qui peuvent concerner :
+---
 
-- les **surfaces** (agrandies ou réduites) ;
-- les **formes** (étirées ou aplaties) ;
-- les **angles** (conservés ou déformés) ;
-- les **distances** (allongées ou réduites).
+# 2. L'échelle : réduire la réalité pour la représenter
 
-**Il n'existe pas de projection capable de conserver parfaitement toutes les propriétés de la surface terrestre.**
+L'**échelle** exprime le rapport entre une distance mesurée sur la carte et
+la distance correspondante dans la réalité.
 
-### Grandes familles de projections
+Elle indique donc combien de fois la réalité a été **réduite** pour pouvoir
+être représentée sur la carte.
 
-| Famille | Propriété conservée | Limite |
-| ------- | ------------------- | ------ |
-| **Conformes** (ex. Mercator, 1569) | Les angles (localement) | Surfaces fortement déformées |
-| **Équivalentes** | Les rapports de surface | Formes déformées |
-| **Aphylactiques** (quelconques, de compromis) | Aucune parfaitement : compromis entre plusieurs déformations | Ni surfaces ni angles parfaitement conservés |
+On rencontre principalement deux formes d'échelle :
 
-L'**indicatrice de Tissot** permet de visualiser ces déformations : de petits cercles tracés sur la Terre sont transformés lorsqu'ils sont représentés sur une carte plane (le cercle reste un cercle mais sa surface varie en conforme ; il s'aplatit mais sa surface reste constante en équivalente ; il devient une ellipse de taille variable en aphylactique).
+- l'**échelle numérique** ;
+- l'**échelle graphique**.
 
-> **À retenir :** l'objectif n'est pas de maîtriser toutes les projections, mais de comprendre qu'**une projection est nécessaire pour passer de la surface courbe de la Terre à une surface plane, et que cette transformation entraîne toujours des déformations.**
+---
 
-## 2.5 Une carte dépend aussi d'un point de vue
+## 2.1. L'échelle numérique
 
-Nous sommes habitués aux planisphères avec le **Nord en haut** et souvent l'**Europe au centre**, mais ce n'est pas la seule représentation possible :
+L'échelle numérique s'écrit sous la forme d'un rapport.
 
-- **Un centrage différent** : planisphère de Mercator centré sur l'Europe ou sur le Japon (même projection, même orientation, centre différent).
-- **Une orientation différente** : carte de McArthur (1979), Sud en haut. Placer le Nord en haut est une **convention cartographique**, non une obligation.
+Par exemple :
 
-**Le centre d'une carte et son orientation sont eux aussi des choix cartographiques.** Face à une carte : *quel espace a été placé au centre ? quelle orientation a été choisie ? pourquoi ?*
+**1 : 100 000**
 
-## 2.6 Le fond de carte : le support de la représentation
+Cela signifie que :
 
-Le **fond de carte** est le support géographique sur lequel les informations sont représentées. Selon l'objectif, il peut comporter : limites des pays, des régions ou des communes, littoral, cours d'eau, principales villes, routes, autres repères utiles. Tous ces éléments ne doivent pas apparaître sur toutes les cartes.
+**1 cm sur la carte = 100 000 cm dans la réalité**
 
-*Exemple : pour représenter la population des régions françaises, les limites régionales sont nécessaires ; représenter toutes les routes et tous les cours d'eau rendrait la carte trop chargée.*
+Il faut ensuite convertir cette distance :
 
-Le choix du fond de carte dépend du **message que l'on souhaite transmettre**.
+**100 000 cm = 1 000 m = 1 km**
 
-## 2.7 La généralisation : sélectionner et simplifier l'information
+Donc :
 
-Lorsqu'on réduit un territoire, il devient impossible de conserver tous les détails. Le cartographe doit **sélectionner, simplifier ou supprimer** certains éléments : c'est la **généralisation cartographique**.
+> **À l'échelle 1 : 100 000, 1 cm sur la carte représente 1 km sur le terrain.**
 
-- À **grande échelle** (ex. 1 : 25 000), une côte peut être représentée avec de nombreux détails (routes, bâtiments, petits îlots).
-- À **échelle moyenne** (ex. 1 : 250 000), certains détails sont simplifiés (moins de routes, certains îlots supprimés).
-- À **petite échelle** (ex. 1 : 2 500 000), seuls les éléments principaux sont conservés (villes majeures, limites générales, littoral simplifié).
+### Exemple
 
-La généralisation ne signifie pas que la carte est incorrecte : elle permet de **rendre l'information lisible à l'échelle choisie**. Plus l'espace représenté est vaste, plus l'information est sélectionnée et simplifiée.
+Deux villes sont séparées de **4 cm** sur une carte au **1 : 100 000**.
 
-## 2.8 Échelle, projection et fond de carte : trois choix liés
+Nous savons que :
 
-Pour représenter la population en France, le cartographe doit décider :
+**1 cm = 1 km**
 
-1. **Quelle portion de l'espace représenter ?** France entière, une région, une commune ?
-2. **À quelle échelle ?** Le niveau de détail dépend de l'espace représenté.
-3. **Quel fond de carte ?** Communes, départements ou régions ?
-4. **Quelle projection ?** Particulièrement importante lorsque l'espace devient vaste.
-5. **Quels éléments sélectionner ?** Pour que la carte reste claire et lisible (titre, légende, couleurs, figurés...).
+Donc :
 
-## À retenir
+**4 cm = 4 km**
 
-- **L'échelle** exprime le rapport entre une distance sur la carte et la distance correspondante dans la réalité.
-- Une **grande échelle** représente un espace restreint avec beaucoup de détails ; une **petite échelle** un espace plus vaste avec moins de détails.
-- Une **projection cartographique** permet de représenter la surface courbe de la Terre sur un plan.
-- Toute projection entraîne des **déformations** : aucune ne peut tout conserver parfaitement.
-- Le **fond de carte** est le support géographique de l'information.
-- La **généralisation** consiste à sélectionner et simplifier les éléments pour conserver une carte lisible.
-- Changer d'échelle, de projection ou de fond de carte peut modifier la manière dont un territoire est perçu.
+La distance réelle entre les deux villes est donc de **4 km**.
 
-## TD / Activité pratique - Comprendre comment l'espace devient une carte
+---
 
-**Exercice 1 - Lire et utiliser une échelle.** À partir d'une carte fournie, mesurer plusieurs distances à la règle et calculer les distances réelles.
-*Exemple : sur une carte au 1 : 100 000, deux villes sont séparées de 4 cm. Quelle est leur distance réelle ? (1 cm = 1 km → 4 cm = 4 km.)*
+## 2.2. L'échelle graphique
 
-**Exercice 2 - Comparer plusieurs échelles.** Pour un même territoire présenté à plusieurs échelles :
+L'**échelle graphique** est représentée par une ligne graduée indiquant
+directement les distances réelles.
 
-1. quelle carte représente l'espace le plus vaste ?
-2. laquelle contient le plus de détails ?
-3. quels éléments apparaissent ou disparaissent quand l'échelle change ?
-4. pourquoi tous les éléments ne peuvent-ils pas être conservés ?
+Elle permet d'estimer rapidement la distance entre deux lieux sur une carte.
 
-**Exercice 3 - Comparer des planisphères.** À partir de deux ou trois représentations du monde, observer :
+Par exemple, une barre graduée peut indiquer :
 
-1. la forme et la taille apparente des continents ;
-2. le territoire placé au centre ;
-3. l'orientation de la carte ;
-4. les principales différences entre les représentations.
+**0 ─── 10 ─── 20 ─── 30 km**
 
-**Question de synthèse :** *« Pourquoi ne peut-on pas considérer une carte comme une reproduction exacte de la réalité ? »*
+On peut alors comparer directement une distance mesurée sur la carte avec
+cette échelle.
 
-*Cette activité prépare la [séance 3](03_Seance3_Information_Geographique.html), consacrée à l'information géographique et aux trois questions QUOI ? OÙ ? COMMENT ?*
+---
 
-## Support de cours
+## 2.3. Un deuxième exemple de calcul
 
-[Support de cours (PDF)](documents/Semiologie_graphique_L1.pdf) — Séance 2 : pages 16 à 25.
+Prenons une carte à l'échelle :
 
-## Données et énoncé
+**1 : 30 000 000**
 
-*À venir.* (Déposer les fichiers dans `documents/seance2/` puis ajouter le lien ici.)
+Cela signifie que :
 
-## Correction
+**1 cm sur la carte = 30 000 000 cm dans la réalité**
 
-*À venir.*
+Or :
+
+**30 000 000 cm = 300 000 m = 300 km**
+
+Donc :
+
+> **À l'échelle 1 : 30 000 000, 1 cm sur la carte représente 300 km dans la réalité.**
+
+---
+
+# 3. Grande échelle et petite échelle
+
+Le vocabulaire cartographique peut sembler surprenant au début.
+
+En cartographie :
+
+> **Une grande échelle représente généralement un petit territoire avec
+> beaucoup de détails.**
+
+À l'inverse :
+
+> **Une petite échelle représente un territoire plus vaste avec moins de détails.**
+
+Par exemple :
+
+| Type de carte | Échelle | Espace représenté | Niveau de détail |
+| --- | --- | --- | --- |
+| Plan d'un quartier | Grande échelle | Petit | Très détaillé |
+| Carte d'une région | Échelle moyenne | Plus vaste | Détails intermédiaires |
+| Carte de France | Petite échelle | Vaste | Peu détaillé |
+| Planisphère | Très petite échelle | Monde entier | Très peu détaillé |
+
+Il faut donc retenir une relation essentielle :
+
+> **Plus l'échelle est petite, plus l'espace représenté est grand et moins
+> la carte contient de détails.**
+
+### Exemple
+
+Sur un plan détaillé de Paris, il est possible de représenter :
+
+- les rues ;
+- les bâtiments ;
+- certains équipements ;
+- différents lieux particuliers.
+
+Sur une carte de France, il serait impossible et inutile de représenter
+toutes les rues et tous les bâtiments de Paris.
+
+Il faut donc **sélectionner les informations les plus importantes**.
+
+L'échelle influence ainsi directement le **niveau de détail de la carte**.
+
+---
+
+# 4. La projection : passer de la Terre au plan
+
+La Terre possède une surface **courbe**, alors que la carte est généralement
+**plane**.
+
+Pour représenter la Terre, il faut d'abord pouvoir localiser précisément
+les différents points à sa surface.
+
+La **géodésie** permet notamment de définir des coordonnées géographiques
+comme :
+
+- la latitude ;
+- la longitude ;
+- l'altitude.
+
+Une fois ces positions définies, il reste à les représenter sur une surface
+plane : une feuille, un écran ou tout autre support cartographique.
+
+Cette transformation est appelée **projection cartographique**.
+
+> **Une projection cartographique permet de transformer la surface courbe
+> de la Terre afin de la représenter sur une surface plane.**
+
+Une question apparaît alors :
+
+**Peut-on représenter une surface courbe sur un plan sans la déformer ?**
+
+La réponse est **non**.
+
+---
+
+## 4.1. Pourquoi les projections provoquent-elles des déformations ?
+
+On peut comparer le problème à une **orange**.
+
+Imaginez que vous essayiez de retirer la peau d'une orange et de la poser
+complètement à plat sur une table.
+
+Il est impossible de le faire sans :
+
+- la découper ;
+- l'étirer ;
+- la déformer.
+
+Il en va de même pour la surface de la Terre.
+
+> **Toute projection cartographique provoque donc des déformations.**
+
+Ces déformations peuvent concerner notamment :
+
+- les **surfaces** ;
+- les **formes** ;
+- les **angles** ;
+- les **distances**.
+
+Il n'existe donc pas de projection capable de conserver parfaitement
+toutes les propriétés de la surface terrestre.
+
+---
+
+## 4.2. Quelques grandes familles de projections
+
+Il existe de nombreuses projections cartographiques.
+
+Elles ne cherchent pas toutes à conserver les mêmes propriétés.
+
+### Les projections conformes
+
+Les **projections conformes** cherchent principalement à conserver
+les **angles localement**.
+
+En revanche, les surfaces peuvent être fortement déformées.
+
+La projection de **Mercator**, mise au point en 1569, constitue un exemple
+connu de projection conforme.
+
+### Les projections équivalentes
+
+Les **projections équivalentes** cherchent à conserver les **rapports
+de surface**.
+
+Elles sont donc particulièrement intéressantes lorsqu'on souhaite comparer
+la superficie des territoires.
+
+En revanche, les formes peuvent être déformées.
+
+### Les projections de compromis
+
+Certaines projections cherchent plutôt à trouver un **compromis entre
+plusieurs types de déformations**.
+
+Elles ne conservent alors parfaitement ni les surfaces ni les angles,
+mais cherchent à limiter les déformations générales.
+
+> **À ce stade, l'objectif n'est pas de connaître ou de mémoriser toutes
+> les projections cartographiques.**
+>
+> Il faut surtout comprendre qu'une projection est nécessaire pour passer
+> de la surface courbe de la Terre à une surface plane et que cette
+> transformation entraîne toujours des **déformations**.
+
+---
+
+# 5. Une carte dépend aussi d'un point de vue
+
+La manière de représenter le monde dépend également du **centrage** et de
+l'**orientation** de la carte.
+
+Nous sommes habitués à observer des planisphères avec :
+
+- le **Nord en haut** ;
+- l'**Europe** souvent placée dans une position centrale.
+
+Mais cette représentation n'est pas la seule possible.
+
+Un planisphère peut, par exemple, être centré :
+
+- sur l'Europe ;
+- sur le Japon ;
+- sur l'océan Pacifique ;
+- sur un autre espace.
+
+L'orientation peut également être différente.
+
+La **carte de McArthur**, publiée en 1979, propose par exemple une
+représentation du monde avec le **Sud en haut**.
+
+Ces différentes représentations permettent de comprendre une idée importante :
+
+> **Le centre d'une carte et son orientation sont eux aussi des choix
+> cartographiques.**
+
+Face à une carte, on peut donc se demander :
+
+- **Quel espace a été placé au centre ?**
+- **Quelle orientation a été choisie ?**
+- **Pourquoi ?**
+
+Il n'existe pas une seule manière de représenter le monde.
+
+---
+
+# 6. Le fond de carte : le support de la représentation
+
+Le **fond de carte** est le support géographique sur lequel les informations
+vont être représentées.
+
+Selon l'objectif de la carte, il peut comporter différents éléments :
+
+- les limites des pays ;
+- les limites des régions ;
+- les limites des départements ou des communes ;
+- le littoral ;
+- les cours d'eau ;
+- les principales villes ;
+- les routes ;
+- d'autres repères géographiques utiles.
+
+Tous ces éléments ne doivent pas nécessairement apparaître sur toutes
+les cartes.
+
+### Exemple
+
+Imaginons que l'on souhaite représenter la **population des régions
+françaises**.
+
+Les limites régionales sont nécessaires pour identifier les territoires.
+
+En revanche, représenter toutes les routes, tous les cours d'eau et toutes
+les villes rendrait probablement la carte trop chargée.
+
+Le cartographe doit donc conserver uniquement les éléments utiles.
+
+> **Le choix du fond de carte dépend du message que l'on souhaite transmettre.**
+
+---
+
+# 7. La généralisation : sélectionner et simplifier l'information
+
+Lorsqu'on réduit un territoire pour le représenter sur une carte, il devient
+impossible de conserver tous les détails.
+
+Le cartographe doit donc :
+
+- **sélectionner** certains éléments ;
+- **simplifier** certains tracés ;
+- parfois **supprimer** certains détails ;
+- éventuellement **schématiser** certaines formes.
+
+Cette opération est appelée **généralisation cartographique**.
+
+### Exemple
+
+À grande échelle, une côte peut être représentée avec de nombreux détails :
+
+- petites baies ;
+- îlots ;
+- irrégularités du littoral.
+
+Lorsque l'espace représenté devient plus vaste, tous ces éléments ne peuvent
+plus être conservés.
+
+Certains détails doivent alors être simplifiés ou supprimés pour maintenir
+la lisibilité de la carte.
+
+La généralisation ne signifie donc pas nécessairement que la carte est
+incorrecte.
+
+Elle permet de **rendre l'information lisible à l'échelle choisie**.
+
+Il faut retenir que :
+
+> **Plus l'espace représenté est vaste, plus l'information cartographique
+> doit être sélectionnée et simplifiée.**
+
+Le changement d'échelle entraîne donc une variation :
+
+- du niveau de détail ;
+- du nombre d'objets représentés ;
+- de la forme de certains objets cartographiques.
+
+---
+
+# 8. Échelle, projection et fond de carte : trois choix liés
+
+L'échelle, la projection et le fond de carte ne doivent pas être étudiés
+séparément.
+
+Ces trois éléments participent ensemble à la **construction de la carte**.
+
+Imaginons que l'on souhaite représenter la **population en France**.
+
+Le cartographe doit notamment se poser plusieurs questions.
+
+### 1. Quelle portion de l'espace représenter ?
+
+La France entière ?  
+Une région ?  
+Une commune ?
+
+### 2. À quelle échelle ?
+
+Le niveau de détail ne sera pas le même selon l'espace représenté.
+
+### 3. Quel fond de carte utiliser ?
+
+Faut-il représenter :
+
+- les régions ?
+- les départements ?
+- les communes ?
+
+Le choix dépend de l'information que l'on souhaite cartographier.
+
+### 4. Quelle projection utiliser ?
+
+Cette question devient particulièrement importante lorsque l'espace
+représenté est vaste.
+
+### 5. Quels éléments conserver ?
+
+Le cartographe doit enfin sélectionner les éléments nécessaires afin
+que la carte reste **claire et lisible**.
+
+Ces choix montrent à nouveau qu'une carte est une **construction**.
+
+Le cartographe transforme, réduit et simplifie l'espace réel afin de
+transmettre une information géographique.
+
+---
+
+# ✅ À retenir
+
+À l'issue de cette deuxième séance, retenez principalement que :
+
+1. **L'échelle** exprime le rapport entre une distance sur la carte et
+   la distance correspondante dans la réalité.
+
+2. Une **grande échelle** représente un espace restreint avec beaucoup
+   de détails, tandis qu'une **petite échelle** représente un espace plus
+   vaste avec moins de détails.
+
+3. L'échelle influence directement le **niveau de détail** et le nombre
+   d'objets représentés sur une carte.
+
+4. Une **projection cartographique** permet de représenter la surface courbe
+   de la Terre sur une surface plane.
+
+5. **Toute projection entraîne des déformations.** Aucune projection ne peut
+   conserver parfaitement les surfaces, les formes, les angles et les
+   distances en même temps.
+
+6. Le **centrage** et l'**orientation** d'une carte sont également des choix
+   cartographiques.
+
+7. Le **fond de carte** constitue le support géographique sur lequel
+   l'information est représentée.
+
+8. La **généralisation cartographique** consiste à sélectionner et simplifier
+   les éléments représentés afin de conserver une carte lisible.
+
+9. **Changer d'échelle, de projection ou de fond de carte peut modifier
+   la manière dont un territoire est représenté et perçu.**
+
+---
+
+# ✏️ TD / Activité pratique
+
+## Comprendre comment l'espace devient une carte
+
+L'objectif de cette activité est de mettre en pratique les trois grandes
+notions étudiées pendant la séance :
+
+- l'échelle ;
+- le niveau de détail ;
+- la projection cartographique.
+
+Le TD est organisé en **trois exercices courts et progressifs**.
+
+---
+
+## Exercice 1 - Lire et utiliser une échelle
+
+À partir d'une carte fournie par l'enseignant, mesurez plusieurs distances
+à l'aide d'une règle puis calculez les distances réelles correspondantes.
+
+### Exemple
+
+Sur une carte au **1 : 100 000**, deux villes sont séparées de **4 cm**.
+
+Quelle est leur distance réelle ?
+
+Nous savons que :
+
+**1 cm = 1 km**
+
+Donc :
+
+**4 cm = 4 km**
+
+La distance réelle est donc de **4 km**.
+
+---
+
+## Exercice 2 - Comparer plusieurs échelles
+
+Vous observerez plusieurs représentations du **même territoire à des
+échelles différentes**.
+
+Pour chaque représentation, répondez aux questions suivantes :
+
+1. Quelle carte représente l'espace le plus vaste ?
+2. Quelle carte contient le plus de détails ?
+3. Quels éléments apparaissent ou disparaissent lorsque l'échelle change ?
+4. Pourquoi tous les éléments ne peuvent-ils pas être conservés ?
+
+### Objectif
+
+Cet exercice permet de comprendre la relation entre :
+
+**échelle → espace représenté → niveau de détail → généralisation**
+
+---
+
+## Exercice 3 - Comparer des planisphères
+
+Vous comparerez deux ou trois représentations différentes du monde.
+
+Observez notamment :
+
+1. la **forme** des continents ;
+2. leur **taille apparente** ;
+3. le territoire placé au **centre** ;
+4. l'**orientation** de la carte ;
+5. les principales différences entre les représentations.
+
+L'objectif est de comprendre qu'un planisphère dépend :
+
+- de la projection utilisée ;
+- du centrage choisi ;
+- de l'orientation choisie.
+
+---
+
+## Question de synthèse
+
+À partir des trois exercices, répondez à la question suivante :
+
+> **Pourquoi ne peut-on pas considérer une carte comme une reproduction
+> exacte de la réalité ?**
+
+Pour répondre, pensez notamment :
+
+- à la réduction liée à l'échelle ;
+- aux déformations liées à la projection ;
+- à la sélection des informations ;
+- à la généralisation ;
+- au choix du fond de carte ;
+- au centrage et à l'orientation.
+
+### Objectif du TD
+
+À ce stade, il ne s'agit pas de maîtriser toutes les projections
+cartographiques ni toutes les opérations de généralisation.
+
+L'objectif est de comprendre qu'en passant de l'espace réel à la carte,
+le cartographe doit nécessairement **réduire, transformer, sélectionner
+et simplifier la réalité géographique**.
+
+---
+
+# 📄 Support de cours
+
+Le support de la séance est disponible au format PDF :
+
+👉 [**Télécharger le support de la séance 2 (PDF)**](documents/Seance2_Les_elements_fondamentaux_d_une_carte.pdf)
+
+Ce document correspond à la partie **« Séance 2 - Les éléments fondamentaux
+d'une carte : échelle, projection et fond de carte »**.
+
+---
+
+# ✏️ Données et énoncé
+
+### TD2 - Comprendre comment l'espace devient une carte
+
+Le TD comprend trois exercices :
+
+- lire et utiliser une échelle ;
+- comparer un même territoire à plusieurs échelles ;
+- comparer plusieurs représentations du monde.
+
+👉 **Énoncé du TD2 : à venir**
+
+---
+
+# ✅ Correction du TD
+
+La correction sera disponible après la séance.
+
+👉 **Correction du TD2 : à venir**
+
+---
+
+## ➡️ Séance suivante
+
+La prochaine séance sera consacrée à **l'information géographique**.
+
+Après avoir compris comment l'espace réel est transformé pour être représenté
+sur une carte, nous nous intéresserons à **l'information que l'on souhaite
+cartographier**.
+
+Nous apprendrons notamment à répondre à trois questions fondamentales :
+
+**QUOI ? → Quel phénomène souhaite-t-on représenter ?**  
+**OÙ ? → Où est-il localisé ?**  
+**COMMENT ? → Comment peut-on le représenter ?**
+
+Nous distinguerons également les trois grandes formes d'implantation
+cartographique :
+
+- ponctuelle ;
+- linéaire ;
+- surfacique.
+
+👉 [**Continuer vers la séance 3 - L'information géographique : QUOI ? OÙ ? COMMENT ?**](03_Seance3_Information_Geographique.md)
