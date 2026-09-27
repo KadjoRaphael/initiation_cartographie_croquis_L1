@@ -1,12 +1,13 @@
 ---
 title: Introduction - L1 / Initiation à la cartographie et au croquis géographique
+nav_order: 2
 ---
 
 # Introduction
 
 Bienvenue dans le cours **Initiation à la cartographie et au croquis géographique** !
 
-*UE Spécialisation - Les savoir-faire approfondis des géographes* — L1 Géographie et aménagement, Université Paris 8, support de cours du semestre 1.
+*UE Spécialisation - Les savoir-faire approfondis des géographes* - L1 Géographie et aménagement, Université Paris 8, support de cours du semestre 1.
 
 ---
 
@@ -87,11 +88,12 @@ Contrôle continu intégral, en deux DST :
 
 ## Ressources
 
-- [Support de cours (PDF)](documents/Semiologie_graphique_L1.pdf)
+- [Présentation générale du cours (PDF)](documents/Presentation_generale_du_cours.pdf)
+- **Support de cours complet (PDF)** - disponible à la fin de l'ensemble des séances.
 - [Bibliographie](10_Ressources.html)
 
 ---
 
 ## Contact
 
-Kadjo Raphaël KOBENAN — <raphael.kobenan@gmail.com>
+Kadjo Raphaël KOBENAN - <raphael.kobenan@gmail.com>
