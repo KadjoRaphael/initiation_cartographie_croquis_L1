@@ -638,7 +638,7 @@ Le TD comprend trois exercices :
 
 La correction est disponible au format PDF :
 
-👉 [**Télécharger la correction du TD2 (PDF)**](documents/XCorrection_exercice_seance_2.pdf)
+👉 [**Télécharger la correction du TD2 (PDF)**](documents/Correction_exercice_seance_2.pdf)
 
 ---
 
