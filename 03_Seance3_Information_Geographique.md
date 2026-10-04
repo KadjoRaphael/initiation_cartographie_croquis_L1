@@ -625,7 +625,7 @@ le type de variable représenté.
 
 # ✅ Correction du TD
 
-👉 [**Télécharger la correction du TD de la séance 3 (PDF)**](documents/Correction_exercice_Seance3_information_geographique.pdf)
+👉 [**Télécharger la correction du TD de la séance 3 (PDF)**](documents/Correction_exercice_Seance3_information géographique.pdf)
 
 ---
 
