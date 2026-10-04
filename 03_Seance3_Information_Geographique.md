@@ -604,7 +604,7 @@ Il s'agit d'abord d'acquérir une méthode :
 
 Le support complet de la séance est disponible au format PDF :
 
-👉 [**Télécharger le support de la séance 3 (PDF)**](documents/Seance3_Information_geographique.pdf)
+👉 [**Télécharger le support de la séance 3 (PDF)**](documents/Seance3_Information géographique.pdf)
 
 Ce document correspond à la partie **« Séance 3 - L'information géographique :
 QUOI ? OÙ ? COMMENT ? »**.
@@ -619,7 +619,7 @@ L'activité consiste à analyser plusieurs cartes ainsi qu'un tableau afin
 d'identifier la nature de l'information, sa localisation, son implantation et
 le type de variable représenté.
 
-👉 [**Télécharger le TD de la séance 3 (DOCX)**](documents/Exercice_Seance3_information_geographique.docx)
+👉 [**Télécharger le TD de la séance 3 (DOCX)**](documents/Exercice_Seance3_information géographique.docx)
 
 ---
 
