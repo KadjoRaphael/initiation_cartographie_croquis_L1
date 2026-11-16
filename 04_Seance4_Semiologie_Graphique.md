@@ -30,18 +30,24 @@ Comprendre comment **traduire une information géographique en signes graphiques
 | Types d'occupation du sol | Couleurs différentes |
 | Taux de chômage | Graduation de valeur / couleur |
 
+---
+
+## Support de cours
+
+Le support de la séance est disponible au format PDF :
+
+👉 [**Télécharger le support de la séance 4 (PDF)**](documents/Seance4_Le_langage_cartographique_la_semiologie_graphique.pdf)
+
 ## TD / Activité pratique
 
 **Associer plusieurs données à la variable visuelle la plus adaptée** et **repérer des erreurs dans des cartes**.
 
-## Support de cours
+👉 [**Télécharger le support de la séance 4 (PDF)**](documents/Exercice_Seance4_Analyse_de_cartes_et_de_variables_visuelles.docx)
 
-*À venir.*
+## ✅ Correction du TD
 
-## Données et énoncé
+La correction du TD4 est disponible ici :
 
-*À venir.* (Déposer les fichiers dans `documents/seance4/` puis ajouter le lien ici.)
+👉 [**Télécharger la correction du TD de la séance 4 (Excel)**](XCorrection_exercice_Seance4_Analyse_de_cartes_et_de_variables_visuelles.pdf)
 
-## Correction
-
-*À venir.*
+---
